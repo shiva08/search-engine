@@ -25,14 +25,10 @@ def get_all_links(page):
             break
     return links
 
-
 def union(a, b):
     for e in b:
         if e not in a:
             a.append(e)
-
-
-	
 	
 def crawl_web(seed,maxpages):
   
@@ -56,7 +52,6 @@ def crawl_web(seed,maxpages):
             #Adds the page to the list of crawled pages
             crawled.append(page)
     return index, graph
-
 
 
 #--------------------------------building index-----------------------------------
